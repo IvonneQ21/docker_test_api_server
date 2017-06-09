@@ -1,5 +1,5 @@
 {
-  "name": "docker-test-api-server",
+  "name": "docker_test_api_server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
