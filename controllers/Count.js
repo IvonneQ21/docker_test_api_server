@@ -42,7 +42,7 @@ class Count {
   }
 
   reset() {
-    let client = redis.createClient(6379, 'redis');
+    let client = reds.createClient(6379, 'redis');
 
     let okMessage = client.setAsync('count', 0);
 
