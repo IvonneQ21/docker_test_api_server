@@ -1,5 +1,13 @@
 const Count = require('../controllers/Count');
 const count = new Count();
+const containerID = require('../utils/containerID');
+
+module.exports = {
+  getCountHandler,
+  incrementHandler,
+  decrementHandler,
+  resetHandler
+}
 
 function getCountHandler(req, res) {
   count.get()
