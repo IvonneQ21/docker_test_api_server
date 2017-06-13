@@ -3,7 +3,9 @@ version: "2"
 services:
 
   web:
-    image: joshwyatt/lesson-api-server:1.0.0
+    build: .
+    volumes:
+      - ./:/app
 
   redis:
     image: redis
